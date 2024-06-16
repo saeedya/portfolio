@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Saeed Yasrebi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#tutorials">Tutorials</a></li>    
+                <li><a href="#contact">Contact</a></li>       
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Saeed Yasrebi</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#tutorials" onclick="toggleMenu()">Tutorials</a></li>    
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>    
+        </div>
+    </nav>
+    <section id="profile">
+        <!-- <div class="section__pic-container">
+            <img src="./assets/profile-pic.JPG" alt="Saeed Yasrebi profile picture">
+        </div> -->
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h4 class="title">Saeed Yasrebi</h4>
+            <p class="section__text__p2">DevOps Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume-Saeed.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My Linkdin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/saeed-yasrebi-ab277277/'"/>
+                <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/saeedya'"/>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/profile-pic.JPG" alt="Profile picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>5+ years <br />DevOps Engineering</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.Sc. Bachelors Degree <br />M.Sc. Masters Degree</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur nisi distinctio veniam, quos ipsam non dolore reprehenderit cupiditate provident architecto. In non nam inventore aut officiis illum deserunt ratione nemo quisquam, nihil id! Pariatur aliquid facilis animi ipsa ad nesciunt, qui culpa placeat nobis deleniti voluptate tempora eveniet nam minima.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"></img>
+    </section>
+    <section id="experience">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Experience</h1>
+            <div class="experience-details-container">
+              <div class="about-containers">
+                <div class="details-container">
+                  <h2 class="experience-sub-title">Programming Languages</h2>
+                  <div class="article-container">
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>HTML</h3>
+                        <p>Experienced</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>CSS</h3>
+                        <p>Experienced</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Python</h3>
+                        <p>Intermediate</p>
+                      </div>
+                    </article>
+                    <article>
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Java</h3>
+                          <p>Basic</p>
+                        </div>
+                      </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Flask Framework(Restful API)</h3>
+                        <p>Intermediate</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Bash Scripting</h3>
+                        <p>Experienced</p>
+                      </div>
+                    </article>
+                    <article>
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Groovy</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                  </div>
+                </div>
+                <div class="details-container">
+                  <h2 class="experience-sub-title">DevOps Tools</h2>
+                  <div class="article-container">
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Git, Github, Gitea, Gerrit</h3>
+                        <p>Experienced</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Docker, Docker-compose</h3>
+                        <p>Experienced</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Kubernetes</h3>
+                        <p>Experienced</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Jenkins</h3>
+                        <p>Intermediate</p>
+                      </div>
+                    </article>
+                    <article>
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Ansible</h3>
+                          <p>Experienced</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Terraform</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>AWS Cloud</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Apache Kafka</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Redis</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#tutorials'"/>
+    </section>
+    <section id="tutorials">
+        <p class="section__text__p1">Learn With Me</p>
+        <h1 class="title">Tutorials</h1>
+        <div class="tutorials-container">
+            <div class="tutorial" id="cloud-native-tutorial">
+                <h3>What is Cloud-Native?</h3>
+                <p>Cloud Native refers to a set of practices and tools that enable organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Cloud Native technologies include containers, microservices, serverless functions, and immutable infrastructure. <a href="javascript:void(0)" onclick="toggleFullText('cloud-native-tutorial')">Read more</a></p>
+                <div>
+                <p class="full-text" style="display: none;">
+                <strong>Cloud-Native:</strong><br>
+                ● Approach to building, running, and deploying modern applications<br>
+                ● Designed specifically for cloud environments<br>
+                ● Focus on scalability, resilience, and flexibility<br><br>
+                <strong>Benefits of Cloud Native Applications:</strong><br>
+                ● Rapid innovation and response to market changes<br>
+                ● Modern tools and techniques for application development<br>
+                ● Frequent updates without impacting service delivery<br><br>
+                <strong>Speed and Agility in Business:</strong><br>
+                ● Business systems as strategic tools for growth<br>
+                ● Users demand rapid responsiveness, innovative features, and zero downtime<br>
+                ● Cloud-native systems handle rapid change, large scale, and resilience<br>
+                </p>
+                </div>   
+                <!-- <div class="tutorial-image">
+                    <img src="./assets/cloud-native.png" alt="Cloud Native Image">
+                </div> -->
+            </div>
+            <div class="tutorial">
+                <h3>Tutorial Title 2</h3>
+                <p>Short description of tutorial 2. <a href="link_to_tutorial_2">Read more</a></p>
+            </div>
+            <div class="tutorial">
+                <h3>Tutorial Title 3</h3>
+                <p>Short description of tutorial 2. <a href="link_to_tutorial_3">Read more</a></p>
+            </div>
+        </div>
+        <div class="more-btn">
+            <a href="#">More Tutorials</a>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+    </section>
+</section>
+<section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img
+        src="./assets/email.png"
+        alt="Email icon"
+        class="icon contact-icon email-icon"
+      />
+      <p><a href="mailto:yasrebi.saeed@gmail.com">yasrebi.saeed@gmail.com</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img
+        src="./assets/linkedin.png"
+        alt="LinkedIn icon"
+        class="icon contact-icon"
+      />
+      <p><a href="https://www.linkedin.com/in/saeed-yasrebi-ab277277/">LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#tutorials">Tutorials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p>Copyright &#169; 2024 Saeed Yasrebi. All Rights Reserved.</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
